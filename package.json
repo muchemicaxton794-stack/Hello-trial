@@ -1,8 +1,8 @@
 {
-  "name": "hello-trial-whatsapp-bot",
+  "name": "darknote-lv2-whatsapp-bot",
   "version": "1.0.0",
   "private": true,
-  "description": "A modern Baileys WhatsApp bot with switch-case commands and group moderation.",
+  "description": "DARKNOTE Lv2 WhatsApp bot with switch-case commands, pairing-code login, and group moderation.",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",

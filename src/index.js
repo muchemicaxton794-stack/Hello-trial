@@ -12,7 +12,7 @@ const path = require('path');
 const { runBigBroCommand } = require('./bigbro');
 const { createMessageTools } = require('./msg');
 
-const BOT_NAME = process.env.BOT_NAME || 'DARKNOTE';
+const BOT_NAME = process.env.BOT_NAME || 'DARKNOTE Lv2';
 const PREFIX = process.env.PREFIX || '.';
 const SESSION_DIR = path.join(process.cwd(), 'session');
 let socket;
@@ -55,7 +55,7 @@ async function start() {
       try {
         const number = await getPairingNumber();
         const code = await socket.requestPairingCode(number);
-        console.log(`\nDARKNOTE PAIRING CODE: ${code}\nEnter it in WhatsApp > Linked devices > Link with phone number.\n`);
+        console.log(`\n${BOT_NAME} PAIRING CODE: ${code}\nEnter it in WhatsApp > Linked devices > Link with phone number.\n`);
       } catch (error) {
         console.error('Could not create pairing code:', error.message);
       }
