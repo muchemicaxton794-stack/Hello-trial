@@ -1,6 +1,10 @@
 node_modules/
 .env
 session/
+
+# runtime state: per-group settings, owner list, global toggles, linking QR
 data/
 *.log
+*.corrupt-*
+*.tmp
 .DS_Store
